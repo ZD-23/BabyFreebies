@@ -60,8 +60,8 @@
         return;
       }
 
-      const apiKey = 'c067681c06747087119c0ee33f62cebd-us22'; // Replace with your Mailchimp API key
-      const audienceId = 'e5974a090f'; // Replace with your Mailchimp Audience ID
+      const apiKey = c067681c06747087119c0ee33f62cebd-us22; // Replace with your Mailchimp API key
+      const audienceId = e5974a090f; // Replace with your Mailchimp Audience ID
       const dataCenter = apiKey.split('-')[1]; // Extract the data center from the API key
 
       const url = `https://${dataCenter}.api.mailchimp.com/3.0/lists/${audienceId}/members`;
@@ -84,7 +84,7 @@
         if (response.ok) {
           message.textContent = "Thank you! Redirecting...";
           setTimeout(() => {
-            window.location.href = "https://www.latestfreestuff.co.uk/free-baby-stuff/"; // Redirect to your main website
+            window.location.href = https://www.latestfreestuff.co.uk/free-baby-stuff/; // Redirect to your main website
           }, 2000); // Redirect after 2 seconds
         } else {
           const errorData = await response.json();
